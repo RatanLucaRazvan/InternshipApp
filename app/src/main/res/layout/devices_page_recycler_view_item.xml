@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/devicesItemLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/active_recycler_view_item_design"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginBottom="@dimen/devices_item_layout_margin_bottom">
+
+    <ImageView
+        android:id="@+id/devices_item_image_view"
+        android:layout_width="@dimen/devices_image_view_width_and_height"
+        android:layout_height="@dimen/devices_image_view_width_and_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/devices_image_view_margin_start"
+        android:src="@drawable/devices_image_foreground"
+        />
+
+    <TextView
+        android:id="@+id/model_text_view"
+        android:layout_width="@dimen/devices_model_text_view_width"
+        android:layout_height="@dimen/devices_item_text_view_height"
+        app:layout_constraintStart_toEndOf="@id/devices_item_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/text_views_margin_start"
+        android:layout_marginTop="@dimen/devices_model_text_view_margin_top"
+        android:fontFamily="@font/raleway"/>
+    <TextView
+        android:id="@+id/brand_text_view"
+        android:layout_width="@dimen/devices_brand_text_view_width"
+        android:layout_height="@dimen/devices_item_text_view_height"
+        app:layout_constraintStart_toEndOf="@id/devices_item_image_view"
+        app:layout_constraintTop_toBottomOf="@id/model_text_view"
+        android:layout_marginStart="@dimen/text_views_margin_start"
+        android:layout_marginTop="@dimen/devices_brand_text_view_margin_top"
+        android:fontFamily="@font/raleway" />
+    <TextView
+        android:id="@+id/holder_text_view"
+        android:layout_width="@dimen/devices_holder_text_view_width"
+        android:layout_height="@dimen/devices_item_text_view_height"
+        app:layout_constraintStart_toEndOf="@id/devices_item_image_view"
+        app:layout_constraintTop_toBottomOf="@id/brand_text_view"
+        android:layout_marginTop="@dimen/devices_holder_text_view_margin_top"
+        android:layout_marginStart="@dimen/text_views_margin_start"
+        android:fontFamily="@font/raleway"/>
+
+    <ImageButton
+        android:id="@+id/detail_page_button"
+        android:layout_width="@dimen/detail_page_button_width"
+        android:layout_height="@dimen/detail_page_button_height"
+        android:background="@drawable/devices_item_button"
+        android:src="@drawable/detail_button_foreground"
+        android:layout_marginStart="@dimen/detail_page_button_margin_start"
+        android:layout_marginBottom="@dimen/detail_page_button_margin_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/holder_text_view"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_3SS">#DD0011</color>
+    <color name="purple_3SS">#6A7EFC</color>
+    <color name="icon_grey">#8F8E8E</color>
+    <color name="inactive_device_color">#8F8E8E</color>
+    <color name="gradient_color_devices_page">#373636</color>
+    <color name="navbar_background_grey">#545757</color>
+    <color name="grey_3SS">#A1A1A1</color>
+    <color name="pink">#FF5757</color>
+
+    <color name="devices_background">#8F8E8E</color>
+    <color name="gradient_color">#373636</color>
+    <color name="green">#FF00BF08</color>
+
+    <color name="background_color">#202020</color>
+    <color name="owned_device_color">#a5ff8f</color>
+    <color name="accept_transfer">#a5ff8f</color>
+</resources>

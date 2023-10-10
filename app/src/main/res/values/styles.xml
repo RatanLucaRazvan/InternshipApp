@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_design</item>
+        <item name="backgroundTint">@color/red_3SS</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStyleLogout">
+        <item name="android:background">@drawable/button_design</item>
+        <item name="backgroundTint">@color/pink</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TextEditStyle">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <style name="ProfileHeaderBackground">
+        <item name="android:background">@drawable/profile_header_background</item>
+    </style>
+
+    <style name="DeviceHeaderBackground">
+        <item name="android:background">@drawable/device_header_background</item>
+    </style>
+
+    <!-- The style needs to be applied as "android:theme" otherwise it will not make the changes-->
+    <style name="SearchBarStyle">
+        <item name="android:fontFamily">@font/app_text_font</item>
+        <item name="android:background">@drawable/search_bar</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="ProfileLabelStyle">
+        <item name="android:fontFamily">@font/app_text_font</item>
+        <item name="android:background">@drawable/text_view</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TransferAcceptButton">
+        <item name="backgroundTint">@color/accept_transfer</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <style name="TransferDeclineButton">
+        <item name="backgroundTint">@color/red_3SS</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+</resources>

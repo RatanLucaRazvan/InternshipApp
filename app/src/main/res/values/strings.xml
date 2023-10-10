@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Device Manager</string>
+    <string name="text_for_new_fragment">Hello blank fragment</string>
+    <string name="text_splash_screen">Experiences People Love</string>
+    <string name="navigation_profile_string">Profile</string>
+    <string name="navigation_devices_string">Devices</string>
+    <string name="navigation_my_devices_string">My Devices</string>
+    <string name="navigation_device_manager_string">Device Manager</string>
+    <string name="devices">Devices</string>
+    <string name="profile">Profile</string>
+    <string name="my_devices">My Devices</string>
+    <string name="device_management">Device Management</string>
+    <string name="text_credentials">Enter your credentials to access your account</string>
+    <string name="edit_text_username">Username</string>
+    <string name="text_username">Daven Morgan</string>
+    <string name="text_password">Password</string>
+    <string name="text_password_hint">********</string>
+    <string name="text_button_signup">Sign Up</string>
+    <string name="text_button_login">Login</string>
+    <string name="authentication_failed">Authentication Failed</string>
+    <string name="message_username_password_empty">Username or password is empty</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="add_device_text">Add Device</string>
+
+    <string name="email_text">Email</string>
+    <string name="edit_text_email">riccavallo@yahoo.com</string>
+    <string name="start_date_text">Start Date</string>
+    <string name="edit_text_start_date">2023-07-02</string>
+    <string name="text_button_logout">Log out</string>
+    <string name="name_text">Name</string>
+    <string name="brand_description">Brand: %s</string>
+    <string name="inactive_description">INACTIVE</string>
+    <string name="owned_holder_description">Holder: YOU</string>
+    <string name="holder_description">Holder: %s</string>
+    <string name="holder_you">Holder: YOU</string>
+    <string name="accept_transfer">ACCEPT</string>
+    <string name="decline_answer">DECLINE</string>
+    <string name="no_holder_description">Holder: No Holder</string>
+    <string name="device_details_text">Device Details</string>
+    <string name="general_details_text">General Details</string>
+    <string name="device_specifications_text">Device Specifications</string>
+    <string name="other_details_text">Other Details</string>
+    <string name="id_description">Id: %s</string>
+    <string name="name_description">%s</string>
+</resources>

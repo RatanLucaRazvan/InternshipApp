@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_10dp"
+    style="@style/DeviceHeaderBackground"
+    tools:context=".ui.detail.DetailFragment">
+
+    <ImageView
+        android:id="@+id/back_to_devices_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_start_20dp"
+        android:paddingTop="@dimen/padding_top_20dp"
+        android:src="@drawable/arrow_back_icon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_30dp"
+        android:text="@string/device_details_text"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/container_background"
+        app:layout_constraintStart_toStartOf="@id/container_background"
+        app:layout_constraintTop_toTopOf="@id/container_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="@dimen/width_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_40dp"
+        android:background="@drawable/square_background_device"
+        android:padding="@dimen/padding_15dp"
+        android:src="@drawable/device_icon"
+        app:layout_constraintEnd_toEndOf="@id/container_background"
+        app:layout_constraintStart_toStartOf="@id/container_background"
+        app:layout_constraintTop_toTopOf="@+id/device_details"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <View
+        android:id="@+id/general_details_container"
+        android:layout_width="@dimen/width_350dp"
+        android:layout_height="@dimen/height_85dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:background="@drawable/white_square_container"
+        android:padding="@dimen/padding_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/general_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:paddingStart="@dimen/padding_start_30dp"
+        android:text="@string/general_details_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/general_details_container"
+        app:layout_constraintTop_toTopOf="@+id/general_details_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/general_details_container"
+        app:layout_constraintTop_toBottomOf="@+id/general_details"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/general_details_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_brand"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/device_specifications_container"
+        android:layout_width="@dimen/width_350dp"
+        android:layout_height="@dimen/height_160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/white_square_container"
+        android:padding="@dimen/padding_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_details_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:paddingStart="@dimen/padding_start_30dp"
+        android:text="@string/device_specifications_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toTopOf="@+id/device_specifications_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications_serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications_cpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications_serial_number"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications_ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications_cpu"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_specifications_hdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_specifications_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications_ram"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/device_other_details_container"
+        android:layout_width="@dimen/width_350dp"
+        android:layout_height="@dimen/height_180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/white_square_container"
+        android:padding="@dimen/padding_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_specifications_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_other_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:paddingStart="@dimen/padding_start_30dp"
+        android:text="@string/other_details_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/device_other_details_container"
+        app:layout_constraintTop_toTopOf="@+id/device_other_details_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_other_details_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_other_details_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_other_details"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_other_details_manufacture_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/device_other_details_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_other_details_project"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/device_other_details_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_12dp"
+        android:layout_marginTop="@dimen/margin_top_5dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/device_other_details_container"
+        app:layout_constraintStart_toStartOf="@+id/device_other_details_container"
+        app:layout_constraintTop_toBottomOf="@+id/device_other_details_manufacture_date"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
